@@ -1,0 +1,29 @@
+# Project-specific .dockerignore
+
+# Exclude unnecessary directories from the build context
+labs/
+lectures/
+docs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Git
+.git/
