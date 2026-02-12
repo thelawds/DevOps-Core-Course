@@ -115,10 +115,9 @@ jobs:
           echo "## Cache Statistics" >> $GITHUB_STEP_SUMMARY
           echo "| Metric | Value |" >> $GITHUB_STEP_SUMMARY
           echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
-          echo "| Cache Key | \`pip-\${{ hashFiles('requirements*.txt') }}\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| Cache Key | \`pip-\${{ hashFiles('app_python/requirements*.txt') }}\` |" >> $GITHUB_STEP_SUMMARY
           echo "| Python Version | ${{ matrix.python-version }} |" >> $GITHUB_STEP_SUMMARY
           
-          # Measure cache performance
           if [[ "${{ steps.setup-python.outputs.cache-hit }}" == "true" ]]; then
             echo "| Cache Status | HIT |" >> $GITHUB_STEP_SUMMARY
             echo "| Time Saved | ~45 seconds |" >> $GITHUB_STEP_SUMMARY
