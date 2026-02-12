@@ -3,7 +3,7 @@ name: Python CI & Docker Build
 on:
   # Trigger on pushes to main branch
   push:
-    branches: [ main, master, develop, '*']
+    branches: [master]
     paths-ignore:
       - '**.md'
       - 'docs/**'
@@ -11,7 +11,7 @@ on:
   
   # Trigger on pull requests to main
   pull_request:
-    branches: [ main, master ]
+    branches: [main]
     paths-ignore:
       - '**.md'
       - 'docs/**'
@@ -106,7 +106,7 @@ jobs:
         run: |
           echo "## Test Results for Python ${{ matrix.python-version }}" >> $GITHUB_STEP_SUMMARY
           echo "Tests completed with coverage report" >> $GITHUB_STEP_SUMMARY
-
+  # Job 2: Build docker image
   docker:
     name: Build & Push Docker Image
     runs-on: ubuntu-latest
@@ -174,7 +174,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: .
+          context: app_python/
           file: app_python/Dockerfile
           push: true
           tags: ${{ steps.meta.outputs.tags }}
