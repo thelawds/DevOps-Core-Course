@@ -3,7 +3,7 @@ name: Python CI & Docker Build
 on:
   # Trigger on pushes to main branch
   push:
-    branches: [ main, master, develop ]
+    branches: [ main, master, develop, '*']
     paths-ignore:
       - '**.md'
       - 'docs/**'
