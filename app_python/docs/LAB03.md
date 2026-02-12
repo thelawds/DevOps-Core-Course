@@ -77,3 +77,13 @@ tests/test_error_handlers.py::TestErrorHandlers::test_error_response_structure P
 5. docker/build-push-action and docker/metadata-action to add metadata and push image to my docker account
 6. aquasecurity/trivy-action - sequrity
 
+#### Tagging strategy
+I chose CalVer strategy, because it was interesting for me to work with something rarely used in real-world scenarious (I've never seen it used in production code) to undestand why it isn't used, and it seems like SemVer really is more useful for software with releases done weekly or bi-weekly. I can see CalVer being used only for software, which releases daily or almost daily.
+
+#### Link to successful workflow run in GitHub Actions tab
+On pull Request - https://github.com/thelawds/DevOps-Core-Course/actions/runs/21952708708
+
+On push to Master - https://github.com/thelawds/DevOps-Core-Course/actions/runs/21953243188
+
+#### Terminal output or screenshot of green checkmark
+![Successfull Run](screenshots/04-Successfull_run_ci.png)

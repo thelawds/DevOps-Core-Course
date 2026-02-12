@@ -1,3 +1,13 @@
+![Python CI & Docker Build](https://github.com/thelawds/DevOps-Core-Course/workflows/Python%20CI%20&%20Docker%20Build/badge.svg?branch=main)
+
+[![Coverage](https://codecov.io/gh/thelawds/DevOps-Core-Course/branch/main/graph/badge.svg)](https://codecov.io/gh/thelawds/DevOps-Core-Course)
+
+[![Docker Pulls](https://img.shields.io/docker/pulls/thelawds/app_python)](https://hub.docker.com/r/thelawds/app_python)
+
+![Python Version](https://img.shields.io/badge/python-3.13-blue)
+![Flask](https://img.shields.io/badge/flask-3.1-green)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 # DevOps Engineering: Core Practices
 
 [![Labs](https://img.shields.io/badge/Labs-18-blue)](#labs)
