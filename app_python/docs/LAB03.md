@@ -63,3 +63,17 @@ tests/test_error_handlers.py::TestErrorHandlers::test_error_response_structure P
 # GitHub Actions CI Workflow
 
 
+#### Workflow Trigger Strategy
+
+1. workflow_dispatch - we need to be able to run workflow manually
+2. pull_request - checking code quality and correctness on each pull request
+3. push to master - checking code quality and building application image on creating a new version
+
+#### GitHub Actions Marketplace Selections
+1. actions/checkout - checking out on our branch
+2. actions/setup-python - python setup
+3. docker/setup-buildx-action - docker buildx
+4. docker/login-action - login to dockerhub
+5. docker/build-push-action and docker/metadata-action to add metadata and push image to my docker account
+6. aquasecurity/trivy-action - sequrity
+
