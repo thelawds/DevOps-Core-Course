@@ -247,3 +247,5 @@ Calecsey@alecsey-B450-AORUS-ELITE:~/Documents/DevOps-Core-Course/app_python$ doc
 2026-02-05 00:53:01 - __main__ - INFO - Served main endpoint, uptime: 9s
 2026-02-05 00:53:01 - werkzeug - INFO - 172.17.0.1 - - [05/Feb/2026 00:53:01] "GET / HTTP/1.1" 200 -
 ```
+
+
